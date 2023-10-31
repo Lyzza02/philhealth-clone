@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import '../App.css';
+import Header from '../components/Header';
 
 const appStyle = {
   backgroundImage:"url('https://www.philhealth.gov.ph/images/bg_green.jpg')"
@@ -11,7 +12,7 @@ function App() {
     <div className="App"
     style={appStyle}>
       <div>
-        Header
+        <Header/>
       </div>
       <div>
         Navigation bar
