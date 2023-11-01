@@ -62,11 +62,11 @@ function Header() {
           </Navbar.Item>
         </Navbar.Container>
 
-        <Navbar.Container align="left">
+        {/* <Navbar.Container align="left">
           <Navbar.Item href="#">
             At the end
           </Navbar.Item>
-        </Navbar.Container>
+        </Navbar.Container> */}
       </Navbar.Menu>
     </Navbar>
   );
