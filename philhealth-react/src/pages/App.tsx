@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import '../App.css';
 import Header from '../components/Header';
 import FooterSection from '../components/FooterSection';
+import ImageCarousel from '../components/ImageCarousel';
 
 const appStyle = {
   backgroundImage: "url('https://www.philhealth.gov.ph/images/bg_green.jpg')"
@@ -17,7 +18,7 @@ function App() {
       </div>
 
       <div>
-        Image Carousel
+        <ImageCarousel/>
       </div>
 
       <div>
