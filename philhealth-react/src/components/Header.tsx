@@ -12,7 +12,7 @@ function Header() {
       <Navbar.Brand style={{
         height: navbarHeight
       }}>
-        <Navbar.Item href="#" className="custom-navbar-item">
+        <Navbar.Item href="/" className="custom-navbar-item">
           <img
             style={{ width: '140px', height: 'auto' }}
             alt="Philhealth logo"
