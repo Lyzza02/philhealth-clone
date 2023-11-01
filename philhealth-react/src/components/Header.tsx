@@ -1,43 +1,66 @@
 import { Navbar } from "react-bulma-components";
 import * as React from "react";
 
-const appBarStyle = {
-  backgroundColor: "white"
-}
-
 function Header() {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+  const navbarHeight = '80px'; // Set the desired height
+
   return (
-    <Navbar style={{
-      position: 'static',
-      width: '-webkit-fill-available',
-      boxShadow: '2px 2px 5px #888888',
-      backgroundColor: 'white',
-      
-    }}>
+    <Navbar>
       <Navbar.Brand>
-        <Navbar.Item renderAs="a" href="#">
+        <Navbar.Item href="#">
           <img
-            src="https://bulma.io/images/bulma-logo.png"
-            alt="Bulma: a modern CSS framework based on Flexbox"
-            width="112"
-            height="28"
+            style={{ width: '140px', height: 'auto' }}
+            alt="Philhealth logo"
+            src="https://www.philhealth.gov.ph/images/ph_logo0.png"
+          />
+
+          <img
+            style={{ width: '50px', height: 'auto' }}
+            alt="Philhealth logo 2"
+            src="https://www.philhealth.gov.ph/images/bagong_pilipinas_logo3.png"
           />
         </Navbar.Item>
-        <Navbar.Burger />
+
+        <Navbar.Burger
+          className={`navbar-burger burger ${menuOpen ? "is-active" : ""}`}
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+          }}
+          pull="right"
+        />
       </Navbar.Brand>
 
-      <Navbar.Menu style={{ justifyContent: 'space-evenly' }}>
+      <Navbar.Menu>
+        <Navbar.Container align="right">
+          <Navbar.Item href="#">
+            About Us
+          </Navbar.Item>
 
-        <Navbar.Container style={{ justifyContent: 'flex-end' }}>
-          <Navbar.Item href="#">first</Navbar.Item>
-          <Navbar.Item href="#">Second</Navbar.Item>
+          <Navbar.Item href="#">
+            Members
+          </Navbar.Item>
+
+          <Navbar.Item href="#">
+            Our Partners
+          </Navbar.Item>
+
+          <Navbar.Item href="#">
+            Online Services
+          </Navbar.Item>
+
+          <Navbar.Item href="#">
+            Downloads
+          </Navbar.Item>
         </Navbar.Container>
 
-        <Navbar.Container align="right">
-          <Navbar.Item href="#">At the end</Navbar.Item>
+        <Navbar.Container align="left">
+          <Navbar.Item href="#">
+            At the end
+          </Navbar.Item>
         </Navbar.Container>
       </Navbar.Menu>
-
     </Navbar>
   );
 }
