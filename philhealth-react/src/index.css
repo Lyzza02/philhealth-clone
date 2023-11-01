@@ -13,3 +13,11 @@ code {
 } */
 
 @import url("https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css");
+
+.custom-navbar-item {
+  height: 80px;
+}
+
+.navbar-item img {
+  max-height: 5rem;
+}

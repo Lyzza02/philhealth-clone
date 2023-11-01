@@ -8,8 +8,10 @@ function Header() {
 
   return (
     <Navbar>
-      <Navbar.Brand>
-        <Navbar.Item href="#">
+      <Navbar.Brand style={{
+        height: navbarHeight
+      }}>
+        <Navbar.Item href="#" className="custom-navbar-item">
           <img
             style={{ width: '140px', height: 'auto' }}
             alt="Philhealth logo"
@@ -24,6 +26,9 @@ function Header() {
         </Navbar.Item>
 
         <Navbar.Burger
+          style={{
+            height: navbarHeight
+          }}
           className={`navbar-burger burger ${menuOpen ? "is-active" : ""}`}
           onClick={() => {
             setMenuOpen(!menuOpen);
@@ -32,7 +37,9 @@ function Header() {
         />
       </Navbar.Brand>
 
-      <Navbar.Menu>
+      <Navbar.Menu style={{
+        height: navbarHeight
+      }}>
         <Navbar.Container align="right">
           <Navbar.Item href="#">
             About Us
