@@ -2,21 +2,20 @@ import React from 'react';
 import logo from './logo.svg';
 import '../App.css';
 import Header from '../components/Header';
+import FooterSection from '../components/FooterSection';
 
 const appStyle = {
-  backgroundImage:"url('https://www.philhealth.gov.ph/images/bg_green.jpg')"
+  backgroundImage: "url('https://www.philhealth.gov.ph/images/bg_green.jpg')"
 }
 
 function App() {
   return (
     <div className="App"
-    style={appStyle}>
+      style={appStyle}>
       <div>
-        <Header/>
+        <Header />
       </div>
-      <div>
-        Navigation bar
-      </div>
+
       <div>
         Image Carousel
       </div>
@@ -32,7 +31,7 @@ function App() {
       </div>
 
       <div>
-        Footer
+        <FooterSection />
       </div>
 
     </div>
