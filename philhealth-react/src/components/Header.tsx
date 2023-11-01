@@ -1,8 +1,10 @@
 import { Navbar } from "react-bulma-components";
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const [menuOpen, setMenuOpen] = React.useState(false);
+  let navigate = useNavigate();
 
   const navbarHeight = '80px'; // Set the desired height
 
@@ -29,7 +31,7 @@ function Header() {
           style={{
             height: navbarHeight
           }}
-          className={`navbar-burger burger ${menuOpen ? "is-active" : ""}`}
+          className="navbar-burger" 
           onClick={() => {
             setMenuOpen(!menuOpen);
           }}
@@ -37,9 +39,7 @@ function Header() {
         />
       </Navbar.Brand>
 
-      <Navbar.Menu style={{
-        height: navbarHeight
-      }}>
+      <Navbar.Menu className={`navbar-menu ${menuOpen? "is-active":""}`} >
         <Navbar.Container align="right">
           <Navbar.Item href="#">
             About Us
@@ -73,3 +73,4 @@ function Header() {
 }
 
 export default Header;
+ 
