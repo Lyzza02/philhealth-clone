@@ -9,6 +9,10 @@ import {
 import App from './pages/App';
 import AboutUs from './pages/AboutUs';
 import reportWebVitals from './reportWebVitals';
+import Members from './pages/Members';
+import OnlineServices from './pages/OnlineServices';
+import OurPartners from './pages/OurPartners';
+import Downloads from './pages/Downloads';
 
 
 const root = ReactDOM.createRoot(
@@ -18,13 +22,34 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
   },
 
   {
     path: "/about-us",
-    element: <AboutUs/>,
+    element: <AboutUs />,
   },
+
+  {
+    path: "/members",
+    element: <Members />,
+  },
+
+  {
+    path: "/our-partners",
+    element: <OurPartners />,
+  },
+
+  {
+    path: "/online-services",
+    element: <OnlineServices />,
+  },
+
+  {
+    path: "/downloads",
+    element: <Downloads />,
+  },
+
 ]);
 
 

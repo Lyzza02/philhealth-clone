@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 function Header() {
   const [menuOpen, setMenuOpen] = React.useState(false);
-  let navigate = useNavigate();
 
   const navbarHeight = '80px'; // Set the desired height
 
@@ -31,7 +30,7 @@ function Header() {
           style={{
             height: navbarHeight
           }}
-          className="navbar-burger" 
+          className="navbar-burger"
           onClick={() => {
             setMenuOpen(!menuOpen);
           }}
@@ -39,25 +38,25 @@ function Header() {
         />
       </Navbar.Brand>
 
-      <Navbar.Menu className={`navbar-menu ${menuOpen? "is-active":""}`} >
+      <Navbar.Menu className={`navbar-menu ${menuOpen ? "is-active" : ""}`} >
         <Navbar.Container align="right">
-          <Navbar.Item href="#">
+          <Navbar.Item href="/about-us">
             About Us
           </Navbar.Item>
 
-          <Navbar.Item href="#">
+          <Navbar.Item href="/members">
             Members
           </Navbar.Item>
 
-          <Navbar.Item href="#">
+          <Navbar.Item href="/our-partners">
             Our Partners
           </Navbar.Item>
 
-          <Navbar.Item href="#">
+          <Navbar.Item href="/online-services">
             Online Services
           </Navbar.Item>
 
-          <Navbar.Item href="#">
+          <Navbar.Item href="/downloads">
             Downloads
           </Navbar.Item>
         </Navbar.Container>
@@ -73,4 +72,3 @@ function Header() {
 }
 
 export default Header;
- 
