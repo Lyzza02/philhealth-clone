@@ -8,7 +8,7 @@ const appStyle = {
   backgroundImage: "url('https://www.philhealth.gov.ph/images/bg_green.jpg')"
 }
 
-function AboutUs() {
+function OurPartners() {
   return (
     <div className="App"
       style={appStyle}>
@@ -28,4 +28,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default OurPartners;
