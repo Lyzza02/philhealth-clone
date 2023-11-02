@@ -19,7 +19,7 @@ function InfoContent(props: HeroProps) {
 
   return (
     <Card style={cardStyle}>
-      <Card.Image size="4by3" src={props.url} />
+      {props.url && props.url !== "" && <Card.Image size="4by3" src={props.url} />}
       <Card.Content>
         <Heading size={4}>{props.title}</Heading>
         <Content>{props.body}</Content>
