@@ -31,31 +31,6 @@ function FooterSection() {
                   <a href="/" style={{ margin: '0 10px' }}>Privacy Notice</a>
                 </div>
 
-                {/* start for the disclaimer modal*/}
-                <Modal show={showDisclaimerModal} onClose={toggleDisclaimerModal}>
-                  <Modal.Content>
-                    <Content>
-                      <Card>
-                        <Card.Content>
-                          <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', textAlign: 'center'}}>Disclaimer</h1>
-                          <p style={{ textAlign: 'justify' }}>
-                            The PhilHealth Logo, photographs, and information on this website may not be reproduced, copied, or downloaded in any form or by any means, including recording, taping, photocopying, or information storage and retrieval systems, for use in illegal, damaging, or pornographic material.
-                          </p>
-                          <p style={{ textAlign: 'justify' }}>
-                            However, PhilHealth information may be used for educational or informative purposes and may be reproduced, copied, or downloaded without written permission from PhilHealth.
-                          </p>
-                        </Card.Content>
-                        <Card.Footer>
-                          <Card.Footer.Item renderAs="div">
-                            <Button onClick={toggleDisclaimerModal}>Close</Button>
-                          </Card.Footer.Item>
-                        </Card.Footer>
-                      </Card>
-                    </Content>
-                  </Modal.Content>
-                </Modal>
-                {/* end for the disclaimer modal */}
-
                 {/* government logos */}
                 <div>
                   <a href="URL_for_logo1">
@@ -109,6 +84,39 @@ function FooterSection() {
                 <p style={{ fontSize: '12px' }}>
                   © 2014 Philippine Health Insurance Corporation | Citystate Centre, 709 Shaw Boulevard 1603 Pasig City | Action Center 8441-7442
                 </p>
+
+
+                {/* start for the disclaimer modal*/}
+                <Modal show={showDisclaimerModal} onClose={toggleDisclaimerModal}>
+                  <Modal.Content>
+                    <Content>
+                      <Card>
+                        <Card.Content>
+                          <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', textAlign: 'center'}}>Disclaimer</h1>
+                          <p style={{ textAlign: 'justify' }}>
+                            The PhilHealth Logo, photographs, and information on this website may not be reproduced, copied, or downloaded in any form or by any means, including recording, taping, photocopying, or information storage and retrieval systems, for use in illegal, damaging, or pornographic material.
+                          </p>
+                          <p style={{ textAlign: 'justify' }}>
+                            However, PhilHealth information may be used for educational or informative purposes and may be reproduced, copied, or downloaded without written permission from PhilHealth.
+                          </p>
+                        </Card.Content>
+                        <Card.Footer>
+                          <Card.Footer.Item renderAs="div">
+                            <Button onClick={toggleDisclaimerModal}>Close</Button>
+                          </Card.Footer.Item>
+                        </Card.Footer>
+                      </Card>
+                    </Content>
+                  </Modal.Content>
+                </Modal>
+                {/* end for the disclaimer modal */}
+
+
+                {/* start of the privacy */}
+
+
+                {/* end of the privacy */}
+
               </Content>
             </Container>
           </Footer>

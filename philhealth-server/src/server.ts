@@ -42,6 +42,15 @@ const startServer = (app: Express) => { // Use Express type
     });
   });
 
+  app.get("/get-downloads", async (req, res) => {
+    await getConnection().then(async (db) => {
+      const partnerC = await db.collection('download').find({});
+      const partners = await partnerC.toArray();
+      console.log("res", partners);
+      res.status(200).send(partners);
+    });
+  });
+
   app.listen(PORT, async () => {
     console.log(`listening on port ${PORT}`);
   });
