@@ -56,40 +56,54 @@ function FooterSection() {
                 </Modal>
                 {/* end for the disclaimer modal */}
 
+                {/* government logos */}
                 <div>
-                  <img
-                    style={{ width: '60px', height: '60px' }}
-                    alt=" logo1"
-                    src="https://www.philhealth.gov.ph/images/transparency_seal.png"
-                  />
-                  <img
-                    style={{ width: '60px', height: '60px' }}
-                    alt="logo2"
-                    src="https://www.philhealth.gov.ph/images/corp_gov.png"
-                  />
-                  <img
-                    style={{ width: '60px', height: '60px' }}
-                    alt="logo3"
-                    src="https://www.philhealth.gov.ph/images/foi_logo.png"
-                  />
+                  <a href="URL_for_logo1">
+                    <img
+                      style={{ width: '60px', height: '60px' }}
+                      alt="Transparency Seal"
+                      src="https://www.philhealth.gov.ph/images/transparency_seal.png"
+                    />
+                  </a>
+                  <a href="URL_for_logo2">
+                    <img
+                      style={{ width: '60px', height: '60px' }}
+                      alt="Corporate Governance"
+                      src="https://www.philhealth.gov.ph/images/corp_gov.png"
+                    />
+                  </a>
+                  <a href="URL_for_logo3">
+                    <img
+                      style={{ width: '60px', height: '60px' }}
+                      alt="FOI Logo"
+                      src="https://www.philhealth.gov.ph/images/foi_logo.png"
+                    />
+                  </a>
                 </div>
 
+                {/* Social Media */}
                 <div>
-                  <img
-                    style={{ width: '30px', height: '25px' }}
-                    alt="logo1"
-                    src="https://www.philhealth.gov.ph/images/fb_btn.png"
-                  />
-                  <img
-                    style={{ width: '35px', height: '25px' }}
-                    alt="logo2"
-                    src="https://www.philhealth.gov.ph/images/twitter_btn.png"
-                  />
-                  <img
-                    style={{ width: '35px', height: '25px' }}
-                    alt="logo3"
-                    src="https://www.philhealth.gov.ph/images/youtube_btn.png"
-                  />
+                  <a href="https://www.facebook.com/PhilHealthOfficial/">
+                    <img
+                      style={{ width: '30px', height: '25px' }}
+                      alt="Facebook"
+                      src="https://www.philhealth.gov.ph/images/fb_btn.png"
+                    />
+                  </a>
+                  <a href="https://twitter.com/teamphilhealth">
+                    <img
+                      style={{ width: '35px', height: '25px' }}
+                      alt="Twitter"
+                      src="https://www.philhealth.gov.ph/images/twitter_btn.png"
+                    />
+                  </a>
+                  <a href="https://www.youtube.com/user/teamphilhealth">
+                    <img
+                      style={{ width: '35px', height: '25px' }}
+                      alt="YouTube"
+                      src="https://www.philhealth.gov.ph/images/youtube_btn.png"
+                    />
+                  </a>
                 </div>
 
                 <p style={{ fontSize: '12px' }}>
