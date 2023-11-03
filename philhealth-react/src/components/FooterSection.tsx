@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import { Box, Block, Hero, Footer, Container, Content } from "react-bulma-components";
 
 function FooterSection() {
-
-
   return (
     <div>
       <Hero>
@@ -14,7 +12,6 @@ function FooterSection() {
           <Footer>
             <Container>
               <Content style={{ textAlign: 'center' }}>
-                
                 <img
                   style={{ width: '240px', height: 'auto' }}
                   alt="Philhealth logo"
@@ -22,11 +19,11 @@ function FooterSection() {
                 />
 
                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-                  <p style={{ margin: '0 10px' }}> Home </p>
-                  <p style={{ margin: '0 10px' }}> Contact Us </p>
-                  <p style={{ margin: '0 10px' }}> Sitemap </p>
-                  <p style={{ margin: '0 10px' }}> Disclaimer </p>
-                  <p style={{ margin: '0 10px' }}> Privacy Notice </p>
+                  <a href="/" style={{ margin: '0 10px' }}>Home</a>
+                  <a href="/" style={{ margin: '0 10px' }}>Contact Us</a>
+                  <a href="/site-map" style={{ margin: '0 10px' }}>Sitemap</a>
+                  <a href="/" style={{ margin: '0 10px' }}>Disclaimer</a>
+                  <a href="/" style={{ margin: '0 10px' }}>Privacy Notice</a>
                 </div>
 
                 <div>
@@ -46,7 +43,6 @@ function FooterSection() {
                     src="https://www.philhealth.gov.ph/images/foi_logo.png"
                   />
                 </div>
-
 
                 <div>
                   <img
@@ -69,7 +65,6 @@ function FooterSection() {
                 <p style={{ fontSize: '12px' }}>
                   © 2014 Philippine Health Insurance Corporation | Citystate Centre, 709 Shaw Boulevard 1603 Pasig City | Action Center 8441-7442
                 </p>
-
               </Content>
             </Container>
           </Footer>
