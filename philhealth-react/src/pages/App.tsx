@@ -6,7 +6,7 @@ import FooterSection from '../components/FooterSection';
 import ImageCarousel from '../components/ImageCarousel';
 import InfoContent from '../components/InfoContent';
 import { useEffect, useState } from 'react';
-import { Article, getArticles } from '../services/articles'; 
+import { Article, getArticles } from '../services/articles';
 import { Columns } from 'react-bulma-components';
 
 const appStyle = {
@@ -32,18 +32,18 @@ function App() {
         <ImageCarousel />
       </div>
 
-      <div style={{ marginTop: '20px' }}>
+      <div style={{ marginTop: '20px', marginBottom: '20px' }}>
         <Columns>
           {articles.map((article, index) => (
             <Columns.Column key={index} size={"one-quarter"} className="has-text-centered">
-              <InfoContent title={article.title} body={article.body} url={article.url}/>
+              <InfoContent title={article.title} body={article.body} url={article.url} />
             </Columns.Column>
           ))}
         </Columns>
       </div>
 
       <div>
-        Links
+        {/* Links */}
       </div>
 
       <div>
