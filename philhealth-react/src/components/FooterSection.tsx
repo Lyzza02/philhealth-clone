@@ -1,6 +1,8 @@
-import { relative } from 'path';
 import React, { useState } from 'react';
-import { Box, Block, Hero, Footer, Container, Content, Button, Modal, Card } from "react-bulma-components";
+import { Box, Column, FooterContainer, FooterLink, Heading, Row } from './FooterStyle';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import DisclaimerModal from '../modal/DisclaimerModal';
 import PrivacyModal from '../modal/PrivacyModal';
 
@@ -19,89 +21,156 @@ function FooterSection() {
 
   return (
     <div>
-      <Hero>
-        <Hero.Header renderAs="header" />
-        <Hero.Body />
-        <Hero.Footer>
-          <Footer>
-            <Container>
-              <Content style={{ textAlign: 'center' }}>
-                <img
-                  style={{ width: '240px', height: 'auto' }}
-                  alt="Philhealth logo"
-                  src="https://www.philhealth.gov.ph/images/ph_logo0.png"
-                />
+      <Box>
+        <h1
+          style={{
+            textAlign: "center",
+            marginTop: "10px",
+            marginBottom: "20px",
+          }}
+        >
+          <img
+            style={{ width: '240px', height: 'auto' }}
+            alt="Philhealth logo"
+            src="https://www.philhealth.gov.ph/images/ph_logo0.png"
+          />
+        </h1>
+        <FooterContainer>
+          <Row>
 
-                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-                  <a href="/" style={{ margin: '0 10px' }}>Home</a>
-                  <a href="/" style={{ margin: '0 10px' }}>Contact Us</a>
-                  <a href="/site-map" style={{ margin: '0 10px' }}>Sitemap</a>
-                  <a onClick={toggleDisclaimerModal} style={{ margin: '0 10px' }}>Disclaimer</a>
-                  <DisclaimerModal showDisclaimerModal={showDisclaimerModal} toggleDisclaimerModal={toggleDisclaimerModal} />
+            <Column>
+              <Heading></Heading>
+              <FooterLink>
+                <FontAwesomeIcon icon={faLocationDot} style={{ marginRight: '10px' }} />
+                Citystate Centre, 709 Shaw Boulevard 1603 Pasig City
+              </FooterLink>
+              <FooterLink>
+                <FontAwesomeIcon icon={faPhone} style={{ marginRight: '10px' }} />
+                Action Center 8441-7442
+              </FooterLink>
+            </Column>
 
-                  <a onClick={togglePrivacyModal} style={{ margin: '0 10px' }}>Privacy Notice</a>
-                  <PrivacyModal showPrivacyModal={showPrivacyModal} togglePrivacyModal={togglePrivacyModal} />
-                </div>
+            <Column>
+              <Heading>Navigation</Heading>
+              <FooterLink href="/">
+                Home
+              </FooterLink>
+              <FooterLink href="/">
+                Contact Us
+              </FooterLink>
+              <FooterLink href="/site-map">
+                Sitemap
+              </FooterLink>
+              <FooterLink onClick={toggleDisclaimerModal}>
+                Disclaimer
+              </FooterLink>
+              <DisclaimerModal showDisclaimerModal={showDisclaimerModal} toggleDisclaimerModal={toggleDisclaimerModal} />
 
-                {/* government logos */}
-                <div>
-                  <a href="URL_for_logo1">
-                    <img
-                      style={{ width: '60px', height: '60px' }}
-                      alt="Transparency Seal"
-                      src="https://www.philhealth.gov.ph/images/transparency_seal.png"
-                    />
-                  </a>
-                  <a href="URL_for_logo2">
-                    <img
-                      style={{ width: '60px', height: '60px' }}
-                      alt="Corporate Governance"
-                      src="https://www.philhealth.gov.ph/images/corp_gov.png"
-                    />
-                  </a>
-                  <a href="URL_for_logo3">
-                    <img
-                      style={{ width: '60px', height: '60px' }}
-                      alt="FOI Logo"
-                      src="https://www.philhealth.gov.ph/images/foi_logo.png"
-                    />
-                  </a>
-                </div>
+              <FooterLink onClick={togglePrivacyModal}>
+                Privacy Notice
+              </FooterLink>
+              <PrivacyModal showPrivacyModal={showPrivacyModal} togglePrivacyModal={togglePrivacyModal} />
+            </Column>
 
-                {/* Social Media */}
-                <div>
-                  <a href="https://www.facebook.com/PhilHealthOfficial/">
-                    <img
-                      style={{ width: '30px', height: '25px' }}
-                      alt="Facebook"
-                      src="https://www.philhealth.gov.ph/images/fb_btn.png"
-                    />
-                  </a>
-                  <a href="https://twitter.com/teamphilhealth">
-                    <img
-                      style={{ width: '35px', height: '25px' }}
-                      alt="Twitter"
-                      src="https://www.philhealth.gov.ph/images/twitter_btn.png"
-                    />
-                  </a>
-                  <a href="https://www.youtube.com/user/teamphilhealth">
-                    <img
-                      style={{ width: '35px', height: '25px' }}
-                      alt="YouTube"
-                      src="https://www.philhealth.gov.ph/images/youtube_btn.png"
-                    />
-                  </a>
-                </div>
+            <Column>
+              <Heading>Other Links</Heading>
+              <FooterLink href="/">
+                Circulars
+              </FooterLink>
+              <FooterLink href="/">
+                Advisories
+              </FooterLink>
+              <FooterLink href="/">
+                News
+              </FooterLink>
+              <FooterLink href="/">
+                Official Statements
+              </FooterLink>
+              <FooterLink href="/">
+                ITB
+              </FooterLink>
+              <FooterLink href="/">
+                Job Vacancies
+              </FooterLink>
+              <FooterLink href="/">
+                Joint Issuances
+              </FooterLink>
+            </Column>
 
-                <p style={{ fontSize: '12px' }}>
-                  © 2014 Philippine Health Insurance Corporation | Citystate Centre, 709 Shaw Boulevard 1603 Pasig City | Action Center 8441-7442
-                </p>
+            <Column>
+              <Heading>Social Media</Heading>
+              <FooterLink href="https://www.facebook.com/PhilHealthOfficial/">
+                <i className="fab fa-facebook-f">
+                  <span
+                    style={{
+                      marginLeft: "10px",
+                    }}
+                  >
+                    Facebook
+                  </span>
+                </i>
+              </FooterLink>
+              <FooterLink href="https://twitter.com/teamphilhealth">
+                <i className="fab fa-twitter">
+                  <span
+                    style={{
+                      marginLeft: "10px",
+                    }}
+                  >
+                    Twitter
+                  </span>
+                </i>
+              </FooterLink>
+              <FooterLink href="https://www.youtube.com/user/teamphilhealth">
+                <i className="fab fa-youtube">
+                  <span
+                    style={{
+                      marginLeft: "10px",
+                    }}
+                  >
+                    Youtube
+                  </span>
+                </i>
+              </FooterLink>
+              <FooterLink>
+                <a href="https://www.philhealth.gov.ph/about_us/transparency/">
+                  <img
+                    style={{ width: '55px', height: '55px' }}
+                    alt="Transparency Seal"
+                    src="https://www.philhealth.gov.ph/images/transparency_seal.png"
+                  />
+                </a>
+                <a href="https://www.philhealth.gov.ph/about_us/transparency/GOCC_Scorecard.pdf">
+                  <img
+                    style={{ width: '55px', height: '55px' }}
+                    alt="Corporate Governance"
+                    src="https://www.philhealth.gov.ph/images/corp_gov.png"
+                  />
+                </a>
+                <a href="https://www.foi.gov.ph/requests?agency=PH">
+                  <img
+                    style={{ width: '55px', height: '55px' }}
+                    alt="FOI Logo"
+                    src="https://www.philhealth.gov.ph/images/foi_logo.png"
+                  />
+                </a>
+              </FooterLink>
+            </Column>
+          </Row>
+        </FooterContainer>
 
-              </Content>
-            </Container>
-          </Footer>
-        </Hero.Footer>
-      </Hero>
+        <h1
+          style={{
+            color: "green",
+            textAlign: "center",
+            marginTop: "10px",
+            fontWeight: "400",
+            fontSize: "16px"
+          }}
+        >
+          © 2014 Philippine Health Insurance Corporation
+        </h1>
+      </Box>
     </div>
   );
 }
