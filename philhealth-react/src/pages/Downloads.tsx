@@ -4,7 +4,7 @@ import '../App.css';
 import Header from '../components/Header';
 import FooterSection from '../components/FooterSection';
 import { Box, Columns } from 'react-bulma-components';
-import localImage  from '../pictures/downloads.png'; // Import the local image
+import localImage from '../pictures/downloads.png'; // Import the local image
 import InfoContent from '../components/InfoContent';
 import { Download, getDownloads } from '../services/downloads';
 
@@ -22,7 +22,7 @@ function Downloads() {
     });
   }, []);
 
-  
+
   return (
     <div className="App"
       style={appStyle}>
@@ -32,25 +32,25 @@ function Downloads() {
 
       <div>
         <Box>
-          <img src={localImage} alt="" style={{ width: '100%', height: 'auto' }}/>
+          <img src={localImage} alt="" style={{ width: '100%', height: 'auto' }} />
         </Box>
       </div>
 
-      <div style={{ marginTop: '20px' }}>
+      <div style={{ marginTop: '60px' }}>
         <Columns>
           {downloads.slice(0, 3).map((download, index) => (
             <Columns.Column key={index} className="has-text-centered">
-                <InfoContent title={download.title} body={download.body} />
+              <InfoContent title={download.title} body={download.body} />
             </Columns.Column>
           ))}
         </Columns>
       </div>
 
-      <div style={{ marginTop: '20px' }}>
+      <div style={{ marginTop: '60px', marginBottom: '60px' }}>
         <Columns>
           {downloads.slice(3).map((download, index) => (
             <Columns.Column key={index} className="has-text-centered">
-                <InfoContent title={download.title} body={download.body} />
+              <InfoContent title={download.title} body={download.body} />
             </Columns.Column>
           ))}
         </Columns>

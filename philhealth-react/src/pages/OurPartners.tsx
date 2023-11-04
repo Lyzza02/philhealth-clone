@@ -29,15 +29,15 @@ function OurPartners() {
 
       <div>
         <Box>
-          <img src="https://www.philhealth.gov.ph/images/thankyou_bnnr01.jpg" alt="" style={{ width: '100%', height: 'auto' }}/>
+          <img src="https://www.philhealth.gov.ph/images/thankyou_bnnr01.jpg" alt="" style={{ width: '100%', height: 'auto' }} />
         </Box>
       </div>
 
-      <div style={{ marginTop: '20px' }}>
+      <div style={{ marginTop: '60px', marginBottom: '60px' }}>
         <Columns>
           {partners.map((partners, index) => (
             <Columns.Column key={index} size={"one-quarter"} className="has-text-centered">
-              <InfoContent title={partners.title} body={partners.body}/>
+              <InfoContent title={partners.title} body={partners.body} />
             </Columns.Column>
           ))}
         </Columns>

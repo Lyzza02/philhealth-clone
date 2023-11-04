@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Content, Card, Media, Heading, Image, Columns } from "react-bulma-components";
-import { Article, getArticles } from '../services/articles';  
+import { Article, getArticles } from '../services/articles';
 
 interface HeroProps {
-  url?:string;
+  url?: string;
   title?: string;
   subtitle?: string;
   header?: string;
@@ -14,7 +14,7 @@ function InfoContent(props: HeroProps) {
   const cardStyle = {
     width: 300,
     margin: 'auto',
-    height: 'auto', // Adjust the height as needed
+    height: '100%', // Adjust the height as needed
   };
 
   return (
