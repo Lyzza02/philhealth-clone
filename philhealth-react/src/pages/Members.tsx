@@ -1,20 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import '../App.css';
 import Header from '../components/Header';
 import FooterSection from '../components/FooterSection';
 import { Box } from 'react-bulma-components';
+import localImage from '../pictures/members.png';
 
 const appStyle = {
-  backgroundImage: "url('https://www.philhealth.gov.ph/images/bg_green.jpg')"
-}
+  backgroundImage: "url('https://www.philhealth.gov.ph/images/bg_green.jpg')",
+};
+
+const containerStyle: React.CSSProperties = {
+  display: 'flex',
+  flexDirection: 'column' as 'column', // Specify the type explicitly
+  alignItems: 'center',
+  padding: '20px',
+};
+
+const boxContainerStyle = {
+  display: 'flex', // Set display to flex to make boxes appear side by side
+  justifyContent: 'space-between', // Distribute space between boxes
+};
+
+const boxStyle = {
+  flex: 1, // Each box takes up an equal portion of available space
+  maxWidth: '700px',
+  margin: '10px',
+  background: 'white',
+  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+  padding: '20px',
+  borderRadius: '8px',
+};
+
+const h3Style = {
+  fontWeight: 'bold',
+  fontSize: '1.5rem', // Adjust the font size as needed
+  borderBottom: '1.5px solid #000'
+};
+
+const mobileBoxStyle = {
+  width: '95%', // Adjust this value as needed
+};
 
 function Members() {
-  const ulStyle = {
-    listStyleType: 'disc', // Use 'disc' for bullet points
-    paddingLeft: '20px',    // Adjust the padding as needed
-  };
-
   return (
     <div className="App" style={appStyle}>
       <div>
@@ -23,47 +49,40 @@ function Members() {
 
       <div>
         <Box>
-          <img src="https://www.philhealth.gov.ph/images/thankyou_bnnr01.jpg" alt="" style={{ width: '100%', height: 'auto' }} />
+          <img
+            src={localImage}
+            alt=""
+            style={{ width: '100%', height: 'auto' }}
+          />
         </Box>
       </div>
 
-      <div style={{marginTop: '20px', background: 'white'}}>
-        <div>
-          <table style={{width: '100%'}}>
-            <thead>
-              <tr>
-                <th style={{border: '3px solid'}}>Direct Contributors</th>
-                <th style={{border: '3px solid'}}>Indirect Contributors</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style={{ textAlign: 'left', border: '3px solid' }}>
-                  <ul style={ulStyle}>
-                    <li>Employees with formal employment</li>
-                    <li>Kasambahays</li>
-                    <li>Self-earning individuals; Professional practitioners</li>
-                    <li>Overseas Filipino Workers</li>
-                    <li>Filipinos living abroad and those with dual citizenship</li>
-                    <li>Lifetime members</li>
-                    <li>All Filipinos aged 21 years and above with capacity to pay</li>
-                  </ul>
-                </td>
-                <td style={{ textAlign: 'left', border: '3px solid' }}>
-                  <ul style={ulStyle}>
-                    <li>Indigents identified by the DSWD</li>
-                    <li>Beneficiaries of Pantawid Pamilyang Pilipino Program</li>
-                    <li>Senior citizens</li>
-                    <li>Persons with disability</li>
-                    <li>Sangguniang Kabataan officials</li>
-                    <li>Previously identified at point-of-service / sponsored by LGUs</li>
-                    <li>Filipinos aged 21 years old and above without capacity to pay premiums</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div style={containerStyle}>
+        <Box style={{ ...boxStyle, ...mobileBoxStyle }}>
+          <h3 style={h3Style}>Direct Contributors</h3>
+          <ul style={{ marginTop: '15px' }}>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Employees with formal employment</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Kasambahays</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Self-earning individuals; Professional practitioners</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Overseas Filipino Workers</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Filipinos living abroad and those with dual citizenship</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Lifetime members</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>All Filipinos aged 21 years and above with the capacity to pay</li>
+          </ul>
+        </Box>
+
+        <Box style={{ ...boxStyle, ...mobileBoxStyle }}>
+          <h3 style={h3Style}>Indirect Contributors</h3>
+          <ul style={{ marginTop: '15px' }}>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Indigents identified by the DSWD</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Beneficiaries of Pantawid Pamilyang Pilipino Program</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Senior citizens</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Persons with a disability</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Sangguniang Kabataan officials</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Previously identified at the point-of-service / sponsored by LGUs</li>
+            <li style={{ marginLeft: '20px', textAlign: 'left' }}>Filipinos aged 21 years old and above without the capacity to pay premiums</li>
+          </ul>
+        </Box>
       </div>
 
       <div>
