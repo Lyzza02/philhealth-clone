@@ -43,10 +43,6 @@ function App() {
       </div>
 
       <div>
-        {/* Links */}
-      </div>
-
-      <div>
         <FooterSection />
       </div>
     </div>

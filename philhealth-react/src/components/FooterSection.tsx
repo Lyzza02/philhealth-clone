@@ -74,28 +74,48 @@ function FooterSection() {
 
             <Column>
               <Heading>Other Links</Heading>
-              <FooterLink href="/">
+              <FooterLink href="https://www.philhealth.gov.ph/circulars/2023/">
                 Circulars
               </FooterLink>
-              <FooterLink href="/">
+              <FooterLink href="https://www.philhealth.gov.ph/advisories/2023/">
                 Advisories
               </FooterLink>
-              <FooterLink href="/">
+              <FooterLink href="https://www.philhealth.gov.ph/news/">
                 News
               </FooterLink>
-              <FooterLink href="/">
+              <FooterLink href="https://www.philhealth.gov.ph/ofclstmnts/2023/">
                 Official Statements
               </FooterLink>
-              <FooterLink href="/">
+              <FooterLink href="https://www.philhealth.gov.ph/suppliers/iaeb/index.htm">
                 ITB
               </FooterLink>
-              <FooterLink href="/">
+              <FooterLink href="https://www.philhealth.gov.ph/about_us/vacancies/2023/">
                 Job Vacancies
               </FooterLink>
-              <FooterLink href="/">
+              <FooterLink href="https://www.philhealth.gov.ph/joint_issuances/">
                 Joint Issuances
               </FooterLink>
             </Column>
+
+            <Column>
+              <Heading>Image Links</Heading>
+              <FooterLink href="https://www.philhealth.gov.ph/konsulta/">
+                <img src="https://www.philhealth.gov.ph/konsulta/images/konsulta_bnnr_sml.jpg" alt="Konsulta" />
+              </FooterLink>
+              <FooterLink href="https://www.philhealth.gov.ph/about_us/map/regional.htm">
+                <img src="https://www.philhealth.gov.ph/images/contact_btn.jpg" alt="Question or Concern? Contact Us" />
+              </FooterLink>
+              <FooterLink href="https://www.philhealth.gov.ph/uhc/LibreNaBa.pdf">
+                <img src="	https://www.philhealth.gov.ph/images/uhc_btn.jpg" alt="Universal Health Care" />
+              </FooterLink>
+              <FooterLink href="https://www.philhealth.gov.ph/arta/">
+                <img src="https://www.philhealth.gov.ph/images/arta_bnnr_sml.jpg" alt="Anti Red Tape Act" />
+              </FooterLink>
+              <FooterLink href="https://www.philhealth.gov.ph/unclaimedrefunds/">
+                <img src="https://www.philhealth.gov.ph/images/UnclaimedRefunds.jpg" alt="Unclaimed Refunds" />
+              </FooterLink>
+            </Column>
+
 
             <Column>
               <Heading>Social Media</Heading>
