@@ -14,6 +14,7 @@ import OnlineServices from './pages/OnlineServices';
 import OurPartners from './pages/OurPartners';
 import Downloads from './pages/Downloads';
 import SiteMap from './pages/SiteMap';
+import ContactsUs from './pages/ContactsUs';
 
 
 const root = ReactDOM.createRoot(
@@ -54,6 +55,11 @@ const router = createBrowserRouter([
   {
     path: "/site-map",
     element: <SiteMap/>,
+  },
+
+  {
+    path: "/contact-us",
+    element: <ContactsUs/>,
   },
 ]);
 

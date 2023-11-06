@@ -55,7 +55,7 @@ function FooterSection() {
               <FooterLink href="/">
                 Home
               </FooterLink>
-              <FooterLink href="/">
+              <FooterLink href="/contact-us">
                 Contact Us
               </FooterLink>
               <FooterLink href="/site-map">
