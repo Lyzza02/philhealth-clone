@@ -15,6 +15,7 @@ import OurPartners from './pages/OurPartners';
 import Downloads from './pages/Downloads';
 import SiteMap from './pages/SiteMap';
 import ContactsUs from './pages/ContactsUs';
+import EmptyPage from './pages/EmptyPage';
 
 
 const root = ReactDOM.createRoot(
@@ -60,6 +61,11 @@ const router = createBrowserRouter([
   {
     path: "/contact-us",
     element: <ContactsUs/>,
+  },
+
+  {
+    path: "/empty-page",
+    element: <EmptyPage/>,
   },
 ]);
 

@@ -83,13 +83,13 @@ function FooterSection() {
               <FooterLink href="https://www.philhealth.gov.ph/news/">
                 News
               </FooterLink>
-              <FooterLink href="https://www.philhealth.gov.ph/ofclstmnts/2023/">
+              <FooterLink href="/empty-page">
                 Official Statements
               </FooterLink>
               <FooterLink href="https://www.philhealth.gov.ph/suppliers/iaeb/index.htm">
                 ITB
               </FooterLink>
-              <FooterLink href="https://www.philhealth.gov.ph/about_us/vacancies/2023/">
+              <FooterLink href="/empty-page">
                 Job Vacancies
               </FooterLink>
               <FooterLink href="https://www.philhealth.gov.ph/joint_issuances/">
@@ -99,7 +99,7 @@ function FooterSection() {
 
             <Column>
               <Heading>Image Links</Heading>
-              <FooterLink href="https://www.philhealth.gov.ph/konsulta/">
+              <FooterLink href="/empty-page">
                 <img src="https://www.philhealth.gov.ph/konsulta/images/konsulta_bnnr_sml.jpg" alt="Konsulta" />
               </FooterLink>
               <FooterLink href="https://www.philhealth.gov.ph/about_us/map/regional.htm">
