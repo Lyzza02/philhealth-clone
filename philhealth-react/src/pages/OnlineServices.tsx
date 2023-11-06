@@ -4,13 +4,14 @@ import FooterSection from '../components/FooterSection';
 import { Box, Card, Columns, Content, Heading, Image } from 'react-bulma-components';
 
 const appStyle = {
-  backgroundImage: "url('https://www.philhealth.gov.ph/images/bg_green.jpg')"
+  backgroundColor:"white"
 }
 
 const cardStyle = {
   width: '80%',
   margin: 'auto',
   height: '100%', // Adjust the height as needed
+  backgroundColor: "#FDFD97"
 };
 
 const centeredImageStyle = {
@@ -38,7 +39,7 @@ function OnlineServices() {
             <Columns.Column size={"half"} className="has-text-centered">
               <Card style={cardStyle}>
                 <Card.Content>
-                  <div style={centeredImageStyle}> {/* Center the content */}
+                  <div style={centeredImageStyle}>
                     <Image src="https://www.philhealth.gov.ph/services/images/mi.png" size={64} />
                   </div>
                   <Heading size={4} style={{marginBottom: '5px'}}>Member Portal</Heading>
@@ -51,7 +52,7 @@ function OnlineServices() {
             <Columns.Column size={"half"} className="has-text-centered">
             <Card style={cardStyle}>
                 <Card.Content>
-                  <div style={centeredImageStyle}> {/* Center the content */}
+                  <div style={centeredImageStyle}>
                     <Image src="https://www.philhealth.gov.ph/services/images/egroup.png" size={64} />
                   </div>
                   <Heading size={4} style={{marginBottom: '5px'}}>Electronic Group Enrollment System</Heading>
@@ -67,7 +68,7 @@ function OnlineServices() {
             <Columns.Column size={"half"} className="has-text-centered">
             <Card style={cardStyle}>
                 <Card.Content>
-                  <div style={centeredImageStyle}> {/* Center the content */}
+                  <div style={centeredImageStyle}>
                     <Image src="https://www.philhealth.gov.ph/services/images/acr.png" size={64} />
                   </div>
                   <Heading size={4} style={{marginBottom: '5px'}}>Case Rates Search</Heading>
@@ -80,7 +81,7 @@ function OnlineServices() {
             <Columns.Column size={"half"} className="has-text-centered">
             <Card style={cardStyle}>
                 <Card.Content>
-                  <div style={centeredImageStyle}> {/* Center the content */}
+                  <div style={centeredImageStyle}>
                     <Image src="https://www.philhealth.gov.ph/services/images/cec.png" size={64} />
                   </div>
                   <Heading size={4} style={{marginBottom: '5px'}}>Claims Eligibility Checking</Heading>
@@ -96,7 +97,7 @@ function OnlineServices() {
             <h4 style={{ fontSize: '35px' }}>Contribution</h4>
               <Card style={cardStyle}>
                 <Card.Content>
-                  <div style={centeredImageStyle}> {/* Center the content */}
+                  <div style={centeredImageStyle}>
                     <Image src="https://www.philhealth.gov.ph/services/images/eprs.png" size={64} />
                   </div>
                   <Heading size={4} style={{marginBottom: '5px'}}>Electronic Premium Remittance System</Heading>
@@ -110,7 +111,7 @@ function OnlineServices() {
             <h4 style={{ fontSize: '35px' }}>Collection</h4>
               <Card style={cardStyle}>
                 <Card.Content>
-                  <div style={centeredImageStyle}> {/* Center the content */}
+                  <div style={centeredImageStyle}>
                     <Image src="https://www.philhealth.gov.ph/services/images/ecrs.png" size={64} />
                   </div>
                   <Heading size={4} style={{marginBottom: '5px'}}>Electronic Collection Reporting System</Heading>
@@ -124,7 +125,7 @@ function OnlineServices() {
             <h4 style={{ fontSize: '35px' }}>Accreditation</h4>
               <Card style={cardStyle}>
                 <Card.Content>
-                  <div style={centeredImageStyle}> {/* Center the content */}
+                  <div style={centeredImageStyle}>
                     <Image src="	https://www.philhealth.gov.ph/services/images/hci.png" size={64} />
                   </div>
                   <Heading size={4} style={{marginBottom: '5px'}}>Health Care Institutions</Heading>
