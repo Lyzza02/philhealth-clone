@@ -4,7 +4,7 @@ import '../App.css';
 import Header from '../components/Header';
 import FooterSection from '../components/FooterSection';
 import { Box } from 'react-bulma-components';
-import localImage  from '../pictures/fast-time.png'; // Import the local image
+import localImage from '../pictures/fast-time.png'; // Import the local image
 
 const appStyle: React.CSSProperties = {
   display: 'flex',
@@ -23,15 +23,21 @@ const textStyle: React.CSSProperties = {
   fontSize: '20px', // Adjust the font size as needed
 };
 
+const imageStyle: React.CSSProperties = {
+  width: '150px',  // Adjust the desired width
+  height: 'auto', // Maintain aspect ratio
+};
+
+
 function SiteMap() {
   return (
     <div>
       <div>
         <Header />
       </div>
-      
+
       <div style={appStyle}>
-        <img src={localImage} alt="Local Image" />
+        <img src={localImage} alt="Local Image" style={imageStyle} />
         <h1 style={headingStyle}>Coming soon!</h1>
         <p style={textStyle}>This site is currently under construction.</p>
       </div>

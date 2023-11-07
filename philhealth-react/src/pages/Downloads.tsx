@@ -5,7 +5,7 @@ import { Box } from 'react-bulma-components';
 import localImage from '../pictures/downloads.png';
 
 const appStyle: React.CSSProperties = {
-  backgroundImage: 'url(https://www.philhealth.gov.ph/images/bg_green.jpg)',
+  backgroundColor: '#cdc50a',
   textAlign: 'center',
 };
 

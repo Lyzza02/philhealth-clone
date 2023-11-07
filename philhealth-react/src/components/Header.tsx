@@ -7,10 +7,15 @@ function Header() {
 
   const navbarHeight = '80px'; // Set the desired height
 
+  // Define a CSS class for white text
+  const whiteText = {
+    color: 'white',
+  };
+
   return (
-    <Navbar>
+    <Navbar style={{ backgroundColor: '#329900' }}>
       <Navbar.Brand style={{
-        height: navbarHeight
+        height: navbarHeight,
       }}>
         <Navbar.Item href="/" className="custom-navbar-item">
           <img
@@ -40,32 +45,26 @@ function Header() {
 
       <Navbar.Menu className={`navbar-menu ${menuOpen ? "is-active" : ""}`} >
         <Navbar.Container align="right">
-          <Navbar.Item href="/about-us">
+          <Navbar.Item href="/about-us" className="hover-effect" style={whiteText}>
             About Us
           </Navbar.Item>
 
-          <Navbar.Item href="/members">
+          <Navbar.Item href="/members" className="hover-effect" style={whiteText}>
             Members
           </Navbar.Item>
 
-          <Navbar.Item href="/our-partners">
+          <Navbar.Item href="/our-partners" className="hover-effect" style={whiteText}>
             Our Partners
           </Navbar.Item>
 
-          <Navbar.Item href="/online-services">
+          <Navbar.Item href="/online-services" className="hover-effect" style={whiteText}>
             Online Services
           </Navbar.Item>
 
-          <Navbar.Item href="/downloads">
+          <Navbar.Item href="/downloads" className="hover-effect" style={whiteText}>
             Downloads
           </Navbar.Item>
         </Navbar.Container>
-
-        {/* <Navbar.Container align="left">
-          <Navbar.Item href="#">
-            At the end
-          </Navbar.Item>
-        </Navbar.Container> */}
       </Navbar.Menu>
     </Navbar>
   );

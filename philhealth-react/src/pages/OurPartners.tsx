@@ -8,7 +8,7 @@ import { Box, Columns } from 'react-bulma-components';
 import InfoContent from '../components/InfoContent';
 
 const appStyle = {
-  backgroundImage: "url('https://www.philhealth.gov.ph/images/bg_green.jpg')"
+  backgroundColor: '#FDFD97'
 }
 
 function OurPartners() {

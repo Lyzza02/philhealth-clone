@@ -6,7 +6,7 @@ import { Box } from 'react-bulma-components';
 
 const styles = {
   app: {
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#FDFD97',
     fontFamily: 'Arial, sans-serif',
     lineHeight: '1.6',
   },
@@ -62,12 +62,12 @@ const ContactsUs = () => {
             <option value="procar">PRO CAR</option>
             <option value="pro3a">PRO III-A</option>
             <option value="pro3b">PRO III-B</option>
-            
+
             <option value="proncr">PRO NCR</option>
             <option value="proncrnorth">PRO NCR North - Manila</option>
             <option value="proncrcentral">PRO NCR Central - Quezon City</option>
             <option value="proncrsouth">PRO NCR South - Pasig</option>
-            
+
             <option value="pro4a">PRO IV-A</option>
             <option value="pro4b">PRO IV-B</option>
             <option value="pro5">PRO V</option>

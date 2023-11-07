@@ -4,7 +4,7 @@ import FooterSection from '../components/FooterSection';
 import { Box, Card, Columns, Content, Heading, Image } from 'react-bulma-components';
 import localImage from '../pictures/contacts.png';
 
-const appStyle: React.CSSProperties= {
+const appStyle: React.CSSProperties = {
   backgroundColor: '#FDFD97',
   minHeight: '100vh',
   display: 'flex',
@@ -18,9 +18,9 @@ const cardStyle: React.CSSProperties = {
   backgroundColor: 'white',
   borderRadius: '10px',
   boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-  display: 'flex', 
-  flexDirection: 'column', 
-  justifyContent: 'center', 
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
   alignItems: 'center'
 };
 
@@ -68,7 +68,7 @@ const headerCellStyle: React.CSSProperties = {
 function AboutUs() {
   return (
     <div className="App" style={appStyle}>
-      <Header/>
+      <Header />
 
       <Box>
         <img src={localImage} alt="Contact Us" style={{ width: '100%', height: 'auto' }} />

@@ -10,7 +10,7 @@ import { Article, getArticles } from '../services/articles';
 import { Columns } from 'react-bulma-components';
 
 const appStyle = {
-  backgroundImage: "url('https://www.philhealth.gov.ph/images/bg_green.jpg')"
+  backgroundColor: '#FDFD97'
 }
 
 function App() {

@@ -31,3 +31,7 @@ code {
   border-radius: 0px;
   padding: 0;
 }
+
+.navbar-item:hover {
+  color: black !important;
+}
