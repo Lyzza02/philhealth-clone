@@ -5,7 +5,7 @@ import { Box } from 'react-bulma-components';
 import localImage from '../pictures/downloads.png';
 
 const appStyle: React.CSSProperties = {
-  backgroundColor: '#175E50',
+  backgroundColor: '#FDFD97',
   textAlign: 'center',
 };
 
