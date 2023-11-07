@@ -25,8 +25,6 @@ function FooterSection() {
         <h1
           style={{
             textAlign: "center",
-            marginTop: "10px",
-            marginBottom: "20px",
           }}
         >
           <img
@@ -51,6 +49,29 @@ function FooterSection() {
             </Column>
 
             <Column>
+              <Heading></Heading>
+              <FooterLink href="/empty-page">
+                <img src="https://www.philhealth.gov.ph/konsulta/images/konsulta_bnnr_sml.jpg" alt="Konsulta" />
+              </FooterLink>
+              <FooterLink href="https://www.philhealth.gov.ph/about_us/map/regional.htm">
+                <img src="https://www.philhealth.gov.ph/images/contact_btn.jpg" alt="Question or Concern? Contact Us" />
+              </FooterLink>
+              <FooterLink href="https://www.philhealth.gov.ph/uhc/LibreNaBa.pdf">
+                <img src="	https://www.philhealth.gov.ph/images/uhc_btn.jpg" alt="Universal Health Care" />
+              </FooterLink>
+            </Column>
+
+            <Column>
+              <Heading></Heading>
+              <FooterLink href="https://www.philhealth.gov.ph/arta/">
+                <img src="https://www.philhealth.gov.ph/images/arta_bnnr_sml.jpg" alt="Anti Red Tape Act" />
+              </FooterLink>
+              <FooterLink href="https://www.philhealth.gov.ph/unclaimedrefunds/">
+                <img src="https://www.philhealth.gov.ph/images/UnclaimedRefunds.jpg" alt="Unclaimed Refunds" />
+              </FooterLink>
+            </Column>
+
+            <Column>
               <Heading>Navigation</Heading>
               <FooterLink href="/">
                 Home
@@ -71,51 +92,6 @@ function FooterSection() {
               </FooterLink>
               <PrivacyModal showPrivacyModal={showPrivacyModal} togglePrivacyModal={togglePrivacyModal} />
             </Column>
-
-            <Column>
-              <Heading>Other Links</Heading>
-              <FooterLink href="https://www.philhealth.gov.ph/circulars/2023/">
-                Circulars
-              </FooterLink>
-              <FooterLink href="https://www.philhealth.gov.ph/advisories/2023/">
-                Advisories
-              </FooterLink>
-              <FooterLink href="https://www.philhealth.gov.ph/news/">
-                News
-              </FooterLink>
-              <FooterLink href="/empty-page">
-                Official Statements
-              </FooterLink>
-              <FooterLink href="https://www.philhealth.gov.ph/suppliers/iaeb/index.htm">
-                ITB
-              </FooterLink>
-              <FooterLink href="/empty-page">
-                Job Vacancies
-              </FooterLink>
-              <FooterLink href="https://www.philhealth.gov.ph/joint_issuances/">
-                Joint Issuances
-              </FooterLink>
-            </Column>
-
-            <Column>
-              <Heading>Image Links</Heading>
-              <FooterLink href="/empty-page">
-                <img src="https://www.philhealth.gov.ph/konsulta/images/konsulta_bnnr_sml.jpg" alt="Konsulta" />
-              </FooterLink>
-              <FooterLink href="https://www.philhealth.gov.ph/about_us/map/regional.htm">
-                <img src="https://www.philhealth.gov.ph/images/contact_btn.jpg" alt="Question or Concern? Contact Us" />
-              </FooterLink>
-              <FooterLink href="https://www.philhealth.gov.ph/uhc/LibreNaBa.pdf">
-                <img src="	https://www.philhealth.gov.ph/images/uhc_btn.jpg" alt="Universal Health Care" />
-              </FooterLink>
-              <FooterLink href="https://www.philhealth.gov.ph/arta/">
-                <img src="https://www.philhealth.gov.ph/images/arta_bnnr_sml.jpg" alt="Anti Red Tape Act" />
-              </FooterLink>
-              <FooterLink href="https://www.philhealth.gov.ph/unclaimedrefunds/">
-                <img src="https://www.philhealth.gov.ph/images/UnclaimedRefunds.jpg" alt="Unclaimed Refunds" />
-              </FooterLink>
-            </Column>
-
 
             <Column>
               <Heading>Social Media</Heading>
@@ -155,21 +131,21 @@ function FooterSection() {
               <FooterLink>
                 <a href="https://www.philhealth.gov.ph/about_us/transparency/">
                   <img
-                    style={{ width: '55px', height: '55px' }}
+                    style={{ width: '40px', height: '40px' }}
                     alt="Transparency Seal"
                     src="https://www.philhealth.gov.ph/images/transparency_seal.png"
                   />
                 </a>
                 <a href="https://www.philhealth.gov.ph/about_us/transparency/GOCC_Scorecard.pdf">
                   <img
-                    style={{ width: '55px', height: '55px' }}
+                    style={{ width: '40px', height: '40px' }}
                     alt="Corporate Governance"
                     src="https://www.philhealth.gov.ph/images/corp_gov.png"
                   />
                 </a>
                 <a href="https://www.foi.gov.ph/requests?agency=PH">
                   <img
-                    style={{ width: '55px', height: '55px' }}
+                    style={{ width: '40px', height: '40px' }}
                     alt="FOI Logo"
                     src="https://www.philhealth.gov.ph/images/foi_logo.png"
                   />
@@ -181,11 +157,11 @@ function FooterSection() {
 
         <h1
           style={{
-            color: "green",
+            color: "#fff",
             textAlign: "center",
             marginTop: "10px",
             fontWeight: "400",
-            fontSize: "16px"
+            fontSize: "16px",
           }}
         >
           © 2014 Philippine Health Insurance Corporation

@@ -1,6 +1,5 @@
 import { Navbar } from "react-bulma-components";
 import * as React from "react";
-import { useNavigate } from "react-router-dom";
 
 function Header() {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -43,7 +42,7 @@ function Header() {
         />
       </Navbar.Brand>
 
-      <Navbar.Menu className={`navbar-menu ${menuOpen ? "is-active" : ""}`} >
+      <Navbar.Menu className={`navbar-menu ${menuOpen ? "is-active" : ""}`} style={{ backgroundColor: '#329900'} }>
         <Navbar.Container align="right">
           <Navbar.Item href="/about-us" className="hover-effect" style={whiteText}>
             About Us

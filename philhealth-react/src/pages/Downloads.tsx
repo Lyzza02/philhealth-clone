@@ -14,13 +14,15 @@ const accordion: React.CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  marginTop: '60px',
+  marginBottom: '60px'
 };
 
 const accordionItem: React.CSSProperties = {
   border: '1px solid #ddd',
   marginBottom: '10px',
-  width: '100%',
-  maxWidth: '900px',
+  width: '90%',
+  maxWidth: '810px',
   borderRadius: '8px',
   overflow: 'hidden',
   boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)',
@@ -111,11 +113,11 @@ function Downloads() {
             </div>
             {section.isOpen ? (
               <div style={openAccordionContent}>
-                <pre>{section.content}</pre>
+                <pre style={{ fontFamily: 'Arial, sans-serif', fontSize: '16px', lineHeight: '1.4' }}>{section.content}</pre >
               </div>
             ) : (
               <div style={accordionContent}>
-                <pre>{section.content}</pre>
+                <pre style={{ fontFamily: 'Arial, sans-serif', fontSize: '16px', lineHeight: '1.4' }}>{section.content}</pre >
               </div>
             )}
           </div>
