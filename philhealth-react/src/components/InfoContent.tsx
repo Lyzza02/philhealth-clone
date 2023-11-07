@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
 import { Content, Card, Media, Heading, Image, Columns } from "react-bulma-components";
-import { Article, getArticles } from '../services/articles';
 
 interface HeroProps {
   url?: string;
