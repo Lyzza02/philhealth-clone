@@ -11,7 +11,7 @@ const cardStyle = {
   width: '80%',
   margin: 'auto',
   height: '100%', // Adjust the height as needed
-  backgroundColor: "#FDFD97"
+  backgroundColor: "#fff"
 };
 
 const centeredImageStyle = {

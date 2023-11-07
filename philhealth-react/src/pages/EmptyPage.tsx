@@ -32,7 +32,7 @@ const imageStyle: React.CSSProperties = {
 function SiteMap() {
   return (
     <div>
-      <div>
+      <div style={{textAlign:'center'}}>
         <Header />
       </div>
 

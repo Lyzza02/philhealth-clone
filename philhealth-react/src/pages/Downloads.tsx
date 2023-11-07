@@ -5,7 +5,7 @@ import { Box } from 'react-bulma-components';
 import localImage from '../pictures/downloads.png';
 
 const appStyle: React.CSSProperties = {
-  backgroundColor: '#cdc50a',
+  backgroundColor: '#175E50',
   textAlign: 'center',
 };
 
@@ -19,7 +19,6 @@ const accordion: React.CSSProperties = {
 };
 
 const accordionItem: React.CSSProperties = {
-  border: '1px solid #ddd',
   marginBottom: '10px',
   width: '90%',
   maxWidth: '810px',
@@ -29,7 +28,8 @@ const accordionItem: React.CSSProperties = {
 };
 
 const accordionHeader: React.CSSProperties = {
-  backgroundColor: '#f1f1f1',
+  backgroundColor: '#329900',
+  color:'#fff',
   padding: '15px',
   cursor: 'pointer',
   userSelect: 'none',

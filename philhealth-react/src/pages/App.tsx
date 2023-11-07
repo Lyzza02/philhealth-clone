@@ -64,7 +64,7 @@ function App() {
       </div>
 
       <div style={{ marginTop: '40px', marginBottom: '100px' }}>
-        <h3 style={sectionTitleStyle}>Updates</h3>
+        <h3 style={sectionTitleStyle}>Announcements, Job Opportunities, and Others</h3>
 
         <Columns>
           <Columns.Column size={3}>

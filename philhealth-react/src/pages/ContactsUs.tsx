@@ -11,7 +11,6 @@ const styles = {
     lineHeight: '1.6',
   },
   container: {
-    maxWidth: '1200px',
     margin: '0 auto',
     padding: '20px',
   },
@@ -26,6 +25,8 @@ const styles = {
     boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
   },
   header: {
+    color:'#329900',
+    fontWeight: 'bold',
     fontSize: '32px',
   },
   subHeader: {
@@ -94,21 +95,21 @@ const ContactsUs = () => {
             <a href="mailto:region1@philhealth.gov.ph" style={{ textDecoration: 'none' }}>region1@philhealth.gov.ph</a>
           </p>
           <h4 style={styles.subHeader}>Local Health Insurance Offices</h4>
-          <h6 style={{ ...styles.text, backgroundColor: 'yellow' }}>LHIO Ilocos Norte</h6>
+          <h6 style={{ ...styles.text, backgroundColor: '#f1f1f1', color: '#175E50' }}>LHIO Ilocos Norte</h6>
           <p className="address" style={{ ...styles.text, marginBottom: '20px' }}>
             Ground Floor, Valdez Building A, Valdez Center, Barangay 1, San Francisco, San Nicolas, Ilocos Norte<br />
             (077) 600-0482<br />
             <a href="mailto:laoag.pro1@philhealth.gov.ph" style={{ textDecoration: 'none' }}>laoag.pro1@philhealth.gov.ph</a>
           </p>
 
-          <h6 style={{ ...styles.text, backgroundColor: 'yellow' }}>LHIO Ilocos Sur</h6>
+          <h6 style={{ ...styles.text, backgroundColor: '#f1f1f1', color: '#175E50' }}>LHIO Ilocos Sur</h6>
           <p className="address" style={{ ...styles.text, marginBottom: '20px' }}>
             2/F Henady Bldg., Brgy 3 Del Pilar St., cor. Salcedo St., Vigan City, Ilocos Sur<br />
             (077) 604-0008<br />
             <a href="mailto:vigan.pro1@philhealth.gov.ph" style={{ textDecoration: 'none' }}>vigan.pro1@philhealth.gov.ph</a>
           </p>
 
-          <h6 style={{ ...styles.text, backgroundColor: 'yellow' }}>LHIO La Union</h6>
+          <h6 style={{ ...styles.text, backgroundColor: '#f1f1f1', color: '#175E50' }}>LHIO La Union</h6>
           <p className="address" style={{ ...styles.text, marginBottom: '20px' }}>
             G/F CSI The City Mall Inc., Brgy. Biday, San Fernando City, La Union<br />
             (072) 607-7162<br />

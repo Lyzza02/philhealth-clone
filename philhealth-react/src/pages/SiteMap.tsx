@@ -3,11 +3,10 @@ import logo from './logo.svg';
 import '../App.css';
 import Header from '../components/Header';
 import FooterSection from '../components/FooterSection';
-import { Box } from 'react-bulma-components';
 import localImage from '../pictures/fast-time.png'; // Import the local image
 
 const appStyle: React.CSSProperties = {
-  backgroundColor: '#FDFD97',
+  backgroundColor: '#fff',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -32,7 +31,7 @@ const imageStyle: React.CSSProperties = {
 function SiteMap() {
   return (
     <div>
-      <div>
+      <div style={{textAlign:'center'}}>
         <Header />
       </div>
 
