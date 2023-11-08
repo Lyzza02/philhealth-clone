@@ -68,75 +68,75 @@ function App() {
 
         <Columns>
           <Columns.Column size={3}>
+          <a href="https://www.philhealth.gov.ph/circulars/2023/">
             <Card style={cardStyle}>
               <Card.Content>
-                <a href="https://www.philhealth.gov.ph/circulars/2023/">
                 <Heading size={4}>Circulars</Heading>
-                </a>
               </Card.Content>
             </Card>
+            </a>
           </Columns.Column>
 
           <Columns.Column size={3}>
+          <a href="https://www.philhealth.gov.ph/advisories/2023/">
             <Card style={cardStyle}>
               <Card.Content>
-                <a href="https://www.philhealth.gov.ph/advisories/2023/">
                 <Heading size={4}>Advisories</Heading>
-                </a>
               </Card.Content>
             </Card>
+          </a>
           </Columns.Column>
 
           <Columns.Column size={3}>
+          <a href="https://www.philhealth.gov.ph/news/">
             <Card style={cardStyle}>
               <Card.Content>
-                <a href="https://www.philhealth.gov.ph/news/">
                 <Heading size={4}>News</Heading>
-                </a>
               </Card.Content>
             </Card>
+            </a>
           </Columns.Column>
 
           <Columns.Column size={3}>
+          <a href="https://www.philhealth.gov.ph/suppliers/iaeb/index.htm">
             <Card style={cardStyle}>
               <Card.Content>
-                <a href="https://www.philhealth.gov.ph/suppliers/iaeb/index.htm">
                 <Heading size={4}>ITB</Heading>
-                </a>
               </Card.Content>
             </Card>
+          </a>
           </Columns.Column>
         </Columns>
 
         <Columns>
           <Columns.Column size={4}>
+          <a href="/empty-page">
             <Card style={cardStyle}>
               <Card.Content>
-                <a href="/empty-page">
                 <Heading size={4}>Offical Statements</Heading>
-                </a>
               </Card.Content>
             </Card>
+            </a>
           </Columns.Column>
 
           <Columns.Column size={4}>
+          <a href="/empty-page">
             <Card style={cardStyle}>
               <Card.Content>
-                <a href="/empty-page">
                 <Heading size={4}>Job Vacancies</Heading>
-                </a>
               </Card.Content>
             </Card>
+          </a>
           </Columns.Column>
 
           <Columns.Column size={4}>
+          <a href="https://www.philhealth.gov.ph/joint_issuances/">
             <Card style={cardStyle}>
               <Card.Content>
-                <a href="https://www.philhealth.gov.ph/joint_issuances/">
                 <Heading size={4}>Joint Issuances</Heading>
-                </a>
               </Card.Content>
             </Card>
+          </a>
           </Columns.Column>
         </Columns>
       </div>

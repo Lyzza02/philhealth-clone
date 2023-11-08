@@ -6,6 +6,7 @@ import FooterSection from '../components/FooterSection';
 import { Partner, getPartners } from '../services/partners';
 import { Box, Columns } from 'react-bulma-components';
 import InfoContent from '../components/InfoContent';
+import localImage from '../pictures/partners_header.png'
 
 const appStyle = {
   backgroundColor: '#FDFD97'
@@ -29,7 +30,7 @@ function OurPartners() {
 
       <div>
         <Box>
-          <img src="https://www.philhealth.gov.ph/images/thankyou_bnnr01.jpg" alt="" style={{ width: '100%', height: 'auto' }} />
+          <img src={localImage} alt="" style={{ width: '100%', height: 'auto' }} />
         </Box>
       </div>
 

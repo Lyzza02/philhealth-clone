@@ -48,6 +48,24 @@ function AboutUs() {
           The call to serve the rural indigents echoed since the early '60s when the Philippine Medical Association
           introduced the MARIA Project which prioritized aid to communities in need of medical assistance.
         </p>
+        <br />  
+        <p style={{fontSize:'12px'}}>Affiliations - An attached agency of the Department of Health and a proud member of the following:</p>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent:'center', fontSize:'12px'}}>
+          <div style={{ marginRight: '10px' }}>
+            <img src="https://www.philhealth.gov.ph/about_us/images/issa.jpg" alt="Contact Us" style={{ width: 'auto', height: 'auto' }} />
+            <p>ISSA</p>
+          </div>
+
+          <div style={{ marginRight: '10px' }}>
+            <img src="https://www.philhealth.gov.ph/about_us/images/assa.jpg" alt="Contact Us" style={{ width: 'auto', height: 'auto' }} />
+            <p>ASSA</p>
+          </div>
+
+          <div style={{ marginRight: '10px' }}>
+            <img src="https://www.philhealth.gov.ph/about_us/images/philssa.jpg" alt="Contact Us" style={{ width: 'auto', height: 'auto' }} />
+            <p>PHILSSA</p>
+          </div>
+        </div>
       </div>
 
       <div style={{ marginTop: '40px', marginBottom: '80px' }}>

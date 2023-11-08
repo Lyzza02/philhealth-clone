@@ -62,7 +62,7 @@ function TableAccordion() {
               {section.title}
             </div>
             <div style={accordionContent}>
-              <pre style={{ fontFamily: 'Arial, sans-serif', fontSize: '1.1rem', lineHeight: '1.4' }}>
+              <pre style={{ fontFamily: 'Arial, sans-serif', fontSize: '1.1rem', lineHeight: '1.4', backgroundColor:'#fff' }}>
                 {section.content}
               </pre>
             </div>

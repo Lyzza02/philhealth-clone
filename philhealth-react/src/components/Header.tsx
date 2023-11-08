@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <Navbar style={{ backgroundColor: '#329900' }}>
+    <Navbar style={{ backgroundColor: '#329900', textAlign:'center' }}>
       <Navbar.Brand style={{
         height: navbarHeight,
       }}>
@@ -32,7 +32,7 @@ function Header() {
 
         <Navbar.Burger
           style={{
-            height: navbarHeight
+            height: navbarHeight, color:'white'
           }}
           className="navbar-burger"
           onClick={() => {

@@ -113,11 +113,11 @@ function Downloads() {
             </div>
             {section.isOpen ? (
               <div style={openAccordionContent}>
-                <pre style={{ fontFamily: 'Arial, sans-serif', fontSize: '16px', lineHeight: '1.4' }}>{section.content}</pre >
+                <pre style={{ fontFamily: 'Arial, sans-serif', fontSize: '16px', lineHeight: '1.4', backgroundColor:'#fff' }}>{section.content}</pre >
               </div>
             ) : (
               <div style={accordionContent}>
-                <pre style={{ fontFamily: 'Arial, sans-serif', fontSize: '16px', lineHeight: '1.4' }}>{section.content}</pre >
+                <pre style={{ fontFamily: 'Arial, sans-serif', fontSize: '16px', lineHeight: '1.4', backgroundColor:'#fff' }}>{section.content}</pre >
               </div>
             )}
           </div>

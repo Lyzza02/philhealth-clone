@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import FooterSection from '../components/FooterSection';
 import { Box, Card, Columns, Content, Heading, Image } from 'react-bulma-components';
+import localImage from '../pictures/our_service.png'
 
 const appStyle: React.CSSProperties = {
   backgroundColor: '#FDFD97'
@@ -29,12 +30,12 @@ function OnlineServices() {
 
       <div>
         <Box>
-          <img src="https://www.philhealth.gov.ph/images/thankyou_bnnr01.jpg" alt="" style={{ width: '100%', height: 'auto' }} />
+          <img src={localImage} alt="" style={{ width: '100%', height: 'auto' }} />
         </Box>
       </div>
 
       <div style={{ marginTop: '40px', marginBottom: '100px' }}>
-        <h4 style={{ fontSize: '35px' }}>Membership</h4>
+        <h4 style={{ fontSize: '36px', marginBottom:'20px', color:'#329900', fontWeight:'bold' }}>Membership</h4>
         <Columns>
           <Columns.Column size={"half"} className="has-text-centered">
             <Card style={cardStyle}>
@@ -63,7 +64,7 @@ function OnlineServices() {
           </Columns.Column>
         </Columns>
 
-        <h4 style={{ fontSize: '35px' }}>Benefits</h4>
+        <h4 style={{ fontSize: '36px', marginBottom:'20px', color:'#329900', fontWeight:'bold' }}>Benefits</h4>
         <Columns>
           <Columns.Column size={"half"} className="has-text-centered">
             <Card style={cardStyle}>
@@ -94,7 +95,7 @@ function OnlineServices() {
 
         <Columns>
           <Columns.Column size={"one-third"} className="has-text-centered">
-            <h4 style={{ fontSize: '35px' }}>Contribution</h4>
+            <h4 style={{ fontSize: '36px', marginBottom:'20px', color:'#329900', fontWeight:'bold' }}>Contribution</h4>
             <Card style={cardStyle}>
               <Card.Content>
                 <div style={centeredImageStyle}>
@@ -108,7 +109,7 @@ function OnlineServices() {
           </Columns.Column>
 
           <Columns.Column size={"one-third"} className="has-text-centered">
-            <h4 style={{ fontSize: '35px' }}>Collection</h4>
+            <h4 style={{ fontSize: '36px', marginBottom:'20px', color:'#329900', fontWeight:'bold' }}>Collection</h4>
             <Card style={cardStyle}>
               <Card.Content>
                 <div style={centeredImageStyle}>
@@ -122,7 +123,7 @@ function OnlineServices() {
           </Columns.Column>
 
           <Columns.Column size={"one-third"} className="has-text-centered">
-            <h4 style={{ fontSize: '35px' }}>Accreditation</h4>
+            <h4 style={{ fontSize: '36px', marginBottom:'20px', color:'#329900', fontWeight:'bold' }}>Accreditation</h4>
             <Card style={cardStyle}>
               <Card.Content>
                 <div style={centeredImageStyle}>
