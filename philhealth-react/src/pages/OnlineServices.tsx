@@ -34,10 +34,10 @@ function OnlineServices() {
         </Box>
       </div>
 
-      <div style={{ marginTop: '40px', marginBottom: '100px' }}>
+      <div style={{ marginTop: '50px', marginBottom: '80px' }}>
         <h4 style={{ fontSize: '36px', marginBottom:'20px', color:'#329900', fontWeight:'bold' }}>Membership</h4>
         <Columns>
-          <Columns.Column size={"half"} className="has-text-centered">
+          <Columns.Column size={"half"} className="has-text-centered" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <Card style={cardStyle}>
               <Card.Content>
                 <div style={centeredImageStyle}>
@@ -50,7 +50,7 @@ function OnlineServices() {
             </Card>
           </Columns.Column>
 
-          <Columns.Column size={"half"} className="has-text-centered">
+          <Columns.Column size={"half"} className="has-text-centered" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <Card style={cardStyle}>
               <Card.Content>
                 <div style={centeredImageStyle}>
@@ -66,7 +66,7 @@ function OnlineServices() {
 
         <h4 style={{ fontSize: '36px', marginBottom:'20px', color:'#329900', fontWeight:'bold' }}>Benefits</h4>
         <Columns>
-          <Columns.Column size={"half"} className="has-text-centered">
+          <Columns.Column size={"half"} className="has-text-centered" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <Card style={cardStyle}>
               <Card.Content>
                 <div style={centeredImageStyle}>
@@ -79,7 +79,7 @@ function OnlineServices() {
             </Card>
           </Columns.Column>
 
-          <Columns.Column size={"half"} className="has-text-centered">
+          <Columns.Column size={"half"} className="has-text-centered" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <Card style={cardStyle}>
               <Card.Content>
                 <div style={centeredImageStyle}>
@@ -94,7 +94,7 @@ function OnlineServices() {
         </Columns>
 
         <Columns>
-          <Columns.Column size={"one-third"} className="has-text-centered">
+          <Columns.Column size={"one-third"} className="has-text-centered" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <h4 style={{ fontSize: '36px', marginBottom:'20px', color:'#329900', fontWeight:'bold' }}>Contribution</h4>
             <Card style={cardStyle}>
               <Card.Content>
@@ -108,7 +108,7 @@ function OnlineServices() {
             </Card>
           </Columns.Column>
 
-          <Columns.Column size={"one-third"} className="has-text-centered">
+          <Columns.Column size={"one-third"} className="has-text-centered" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <h4 style={{ fontSize: '36px', marginBottom:'20px', color:'#329900', fontWeight:'bold' }}>Collection</h4>
             <Card style={cardStyle}>
               <Card.Content>
@@ -122,7 +122,7 @@ function OnlineServices() {
             </Card>
           </Columns.Column>
 
-          <Columns.Column size={"one-third"} className="has-text-centered">
+          <Columns.Column size={"one-third"} className="has-text-centered" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <h4 style={{ fontSize: '36px', marginBottom:'20px', color:'#329900', fontWeight:'bold' }}>Accreditation</h4>
             <Card style={cardStyle}>
               <Card.Content>

@@ -60,7 +60,7 @@ function Members() {
       <div style={containerStyle}>
         <Box style={{ ...boxStyle, ...mobileBoxStyle }}>
           <h3 style={h3Style}>Direct Contributors</h3>
-          <ul style={{ marginTop: '15px' }}>
+          <ul style={{ marginTop: '15px', listStyleType:'disc' }}>
             <li style={{ marginLeft: '20px', textAlign: 'left' }}>Employees with formal employment</li>
             <li style={{ marginLeft: '20px', textAlign: 'left' }}>Kasambahays</li>
             <li style={{ marginLeft: '20px', textAlign: 'left' }}>Self-earning individuals; Professional practitioners</li>
@@ -73,7 +73,7 @@ function Members() {
 
         <Box style={{ ...boxStyle, ...mobileBoxStyle }}>
           <h3 style={h3Style}>Indirect Contributors</h3>
-          <ul style={{ marginTop: '15px' }}>
+          <ul style={{ marginTop: '15px', listStyleType:'disc' }}>
             <li style={{ marginLeft: '20px', textAlign: 'left' }}>Indigents identified by the DSWD</li>
             <li style={{ marginLeft: '20px', textAlign: 'left' }}>Beneficiaries of Pantawid Pamilyang Pilipino Program</li>
             <li style={{ marginLeft: '20px', textAlign: 'left' }}>Senior citizens</li>
